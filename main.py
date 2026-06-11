@@ -2,10 +2,10 @@ import os # variables de entorno
 from typing import List, Dict, Any, Optional # tipos de datos
 from datetime import datetime # manejo de fechas
 import psycopg2 # conexión a PostgreSQL
-from psycoog2.extras import RealDictCursor # cursor para obtener resultados como diccionarios
-from fatsmcp import FatsMCP # clase para manejar la lógica de negocio
+from psycopg2.extras import RealDictCursor # cursor para obtener resultados como diccionarios
+from fastmcp import FastMCP # clase para manejar la lógica de negocio
 
-app = FatsMCP("company-db-server") # instancia de la clase FatsMCP
+app = FastMCP("company-db-sever")
 
 def get_db_connection():
 
